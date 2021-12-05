@@ -18,6 +18,10 @@ extension Color {
     
 }
 
+//These colors are also adaptive to light and dark mode. set in assets.
+//Can easily add more colors to this theme.
+//Can easily make another color theme and switch between them. Just copy this color theme again and rename, also setting new colors for new themes.
+
 struct ColorTheme{
     let accent = Color("AccentColor")
     let background = Color("BackgroundColor")

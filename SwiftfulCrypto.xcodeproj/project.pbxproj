@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		9C04AC9B275C39FD00E1BA68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C04AC9A275C39FD00E1BA68 /* Assets.xcassets */; };
 		9C04AC9E275C3BD500E1BA68 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C04AC9D275C3BD500E1BA68 /* Color.swift */; };
+		9C04ACA4275C436800E1BA68 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C04ACA3275C436800E1BA68 /* HomeView.swift */; };
+		9C04ACA8275C44B400E1BA68 /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C04ACA7275C44B400E1BA68 /* CircleButtonView.swift */; };
 		9C055B9B2759E1AF00B0AF2E /* SwiftfulCryptoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C055B9A2759E1AF00B0AF2E /* SwiftfulCryptoApp.swift */; };
 		9C055B9D2759E1AF00B0AF2E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C055B9C2759E1AF00B0AF2E /* ContentView.swift */; };
 		9C055BA22759E1B100B0AF2E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C055BA12759E1B100B0AF2E /* Preview Assets.xcassets */; };
@@ -17,6 +19,8 @@
 /* Begin PBXFileReference section */
 		9C04AC9A275C39FD00E1BA68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../Resources/Assets.xcassets; sourceTree = "<group>"; };
 		9C04AC9D275C3BD500E1BA68 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		9C04ACA3275C436800E1BA68 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		9C04ACA7275C44B400E1BA68 /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
 		9C055B972759E1AF00B0AF2E /* Crypto Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crypto Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C055B9A2759E1AF00B0AF2E /* SwiftfulCryptoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftfulCryptoApp.swift; sourceTree = "<group>"; };
 		9C055B9C2759E1AF00B0AF2E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,6 +46,55 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		9C04AC9F275C430B00E1BA68 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				9C04ACA5275C449200E1BA68 /* Components */,
+				9C04ACA0275C433C00E1BA68 /* Home */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		9C04ACA0275C433C00E1BA68 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9C04ACA2275C434E00E1BA68 /* ViewModels */,
+				9C04ACA1275C434800E1BA68 /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		9C04ACA1275C434800E1BA68 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9C04ACA3275C436800E1BA68 /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9C04ACA2275C434E00E1BA68 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		9C04ACA5275C449200E1BA68 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				9C04ACA6275C44A600E1BA68 /* CircleButton */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		9C04ACA6275C44A600E1BA68 /* CircleButton */ = {
+			isa = PBXGroup;
+			children = (
+				9C04ACA7275C44B400E1BA68 /* CircleButtonView.swift */,
+			);
+			path = CircleButton;
+			sourceTree = "<group>";
+		};
 		9C055B8E2759E1AF00B0AF2E = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				9C055B9A2759E1AF00B0AF2E /* SwiftfulCryptoApp.swift */,
+				9C04AC9F275C430B00E1BA68 /* Core */,
 				9C04AC9C275C3BC200E1BA68 /* Extensions */,
 				9C055B9C2759E1AF00B0AF2E /* ContentView.swift */,
 				9C04AC9A275C39FD00E1BA68 /* Assets.xcassets */,
@@ -149,7 +203,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C055B9D2759E1AF00B0AF2E /* ContentView.swift in Sources */,
+				9C04ACA4275C436800E1BA68 /* HomeView.swift in Sources */,
 				9C055B9B2759E1AF00B0AF2E /* SwiftfulCryptoApp.swift in Sources */,
+				9C04ACA8275C44B400E1BA68 /* CircleButtonView.swift in Sources */,
 				9C04AC9E275C3BD500E1BA68 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

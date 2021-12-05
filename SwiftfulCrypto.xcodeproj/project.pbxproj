@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C04AC9B275C39FD00E1BA68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C04AC9A275C39FD00E1BA68 /* Assets.xcassets */; };
+		9C04AC9E275C3BD500E1BA68 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C04AC9D275C3BD500E1BA68 /* Color.swift */; };
 		9C055B9B2759E1AF00B0AF2E /* SwiftfulCryptoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C055B9A2759E1AF00B0AF2E /* SwiftfulCryptoApp.swift */; };
 		9C055B9D2759E1AF00B0AF2E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C055B9C2759E1AF00B0AF2E /* ContentView.swift */; };
-		9C055B9F2759E1B100B0AF2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C055B9E2759E1B100B0AF2E /* Assets.xcassets */; };
 		9C055BA22759E1B100B0AF2E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C055BA12759E1B100B0AF2E /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9C055B972759E1AF00B0AF2E /* SwiftfulCrypto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftfulCrypto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C04AC9A275C39FD00E1BA68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../Resources/Assets.xcassets; sourceTree = "<group>"; };
+		9C04AC9D275C3BD500E1BA68 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		9C055B972759E1AF00B0AF2E /* Crypto Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crypto Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C055B9A2759E1AF00B0AF2E /* SwiftfulCryptoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftfulCryptoApp.swift; sourceTree = "<group>"; };
 		9C055B9C2759E1AF00B0AF2E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		9C055B9E2759E1B100B0AF2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C055BA12759E1B100B0AF2E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -32,6 +34,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C04AC9C275C3BC200E1BA68 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9C04AC9D275C3BD500E1BA68 /* Color.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		9C055B8E2759E1AF00B0AF2E = {
 			isa = PBXGroup;
 			children = (
@@ -43,7 +53,7 @@
 		9C055B982759E1AF00B0AF2E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9C055B972759E1AF00B0AF2E /* SwiftfulCrypto.app */,
+				9C055B972759E1AF00B0AF2E /* Crypto Tracker.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -52,8 +62,9 @@
 			isa = PBXGroup;
 			children = (
 				9C055B9A2759E1AF00B0AF2E /* SwiftfulCryptoApp.swift */,
+				9C04AC9C275C3BC200E1BA68 /* Extensions */,
 				9C055B9C2759E1AF00B0AF2E /* ContentView.swift */,
-				9C055B9E2759E1B100B0AF2E /* Assets.xcassets */,
+				9C04AC9A275C39FD00E1BA68 /* Assets.xcassets */,
 				9C055BA02759E1B100B0AF2E /* Preview Content */,
 			);
 			path = SwiftfulCrypto;
@@ -84,7 +95,7 @@
 			);
 			name = SwiftfulCrypto;
 			productName = SwiftfulCrypto;
-			productReference = 9C055B972759E1AF00B0AF2E /* SwiftfulCrypto.app */;
+			productReference = 9C055B972759E1AF00B0AF2E /* Crypto Tracker.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -126,7 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C055BA22759E1B100B0AF2E /* Preview Assets.xcassets in Resources */,
-				9C055B9F2759E1B100B0AF2E /* Assets.xcassets in Resources */,
+				9C04AC9B275C39FD00E1BA68 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +150,7 @@
 			files = (
 				9C055B9D2759E1AF00B0AF2E /* ContentView.swift in Sources */,
 				9C055B9B2759E1AF00B0AF2E /* SwiftfulCryptoApp.swift in Sources */,
+				9C04AC9E275C3BD500E1BA68 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +287,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -283,7 +296,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AshtonHess.SwiftfulCrypto;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Crypto Tracker";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -304,6 +317,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -312,7 +326,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AshtonHess.SwiftfulCrypto;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Crypto Tracker";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

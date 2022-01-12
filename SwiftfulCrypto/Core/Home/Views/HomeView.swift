@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     
+    @EnvironmentObject private var vm: HomeViewModel
     @State private var showPortfolio: Bool = false
     
     var body: some View {
@@ -22,6 +23,19 @@ struct HomeView: View {
                 //This HStack is the Custom Navigation Header.
                 //Circle button, spacer, header text, spacer, circle button
                 homeHeader
+                
+                columnTitles
+                
+                if !showPortfolio{
+                    allCoinsList
+                        .transition(.move(edge: .leading))
+                    //this transition makes the rows swipe left and right when changing views.
+                }
+                if showPortfolio{
+                    portfolioCoinsList
+                        .transition(.move(edge: .trailing))
+                }
+                
                 
                 //This spacer makes the nav header go to the top.
                 //Min length spacer can be shrunk to, along the axis or axes of expansion.
@@ -39,6 +53,7 @@ struct HomeView_Previews: PreviewProvider {
             HomeView()
                 .navigationBarHidden(true)
         }
+        .environmentObject(dev.homeVM)
         
     }
 }
@@ -80,6 +95,45 @@ extension HomeView{
                         
                 }
         }
+        .padding(.horizontal)
+    }
+    
+    private var allCoinsList: some View {
+        List{
+            //This was for populating one test coin into the view. Now using data from the arrays in HomeViewModel
+            //CoinRowView(coin: DeveloperPreview.instance.coin, showHoldingsColumn: false)
+            
+            ForEach(vm.allCoins) { coin in
+                CoinRowView(coin: coin, showHoldingsColumn: false)
+                    .listRowInsets(.init(top: 10, leading: 0, bottom: 10, trailing: 10))
+            }
+        }
+        .listStyle(PlainListStyle())
+    }
+    private var portfolioCoinsList: some View {
+        List{
+            //This was for populating one test coin into the view. Now using data from the arrays in HomeViewModel
+            //CoinRowView(coin: DeveloperPreview.instance.coin, showHoldingsColumn: false)
+            
+            ForEach(vm.portfolioCoins) { coin in
+                CoinRowView(coin: coin, showHoldingsColumn: true)
+                    .listRowInsets(.init(top: 10, leading: 0, bottom: 10, trailing: 10))
+            }
+        }
+        .listStyle(PlainListStyle())
+    }
+    private var columnTitles: some View {
+        HStack{
+            Text("Coin")
+            Spacer()
+            if showPortfolio {
+                Text("Holdings")
+            }
+            Text("Price")
+                .frame(width: UIScreen.main.bounds.width / 3.5, alignment: .trailing)
+        }
+        .font(.caption)
+        .foregroundColor(Color.theme.secondaryText)
         .padding(.horizontal)
     }
 }
